@@ -147,9 +147,7 @@ export default function HomePage() {
       <nav className="sticky top-0 z-50 border-b border-[var(--color-border-subtle)] bg-[var(--color-bg)]/80 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-7 h-7 rounded-md bg-[var(--color-accent)] flex items-center justify-center text-white text-xs font-bold group-hover:bg-[var(--color-accent-bright)] transition-colors">
-              D
-            </div>
+            <img src="/favicon.svg" alt="DevForge" className="w-7 h-7 rounded-md group-hover:opacity-90 transition-opacity" />
             <span className="text-[15px] font-semibold tracking-tight">DevForge</span>
           </Link>
           <div className="hidden md:flex items-center gap-1">
@@ -391,7 +389,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2.5 mb-4">
-                <div className="w-7 h-7 rounded-md bg-[var(--color-accent)] flex items-center justify-center text-white text-xs font-bold">D</div>
+                <img src="/favicon.svg" alt="DevForge" className="w-7 h-7 rounded-md" />
                 <span className="text-[15px] font-semibold tracking-tight">DevForge</span>
               </div>
               <p className="text-[13px] text-[var(--color-text-muted)] leading-relaxed max-w-xs">

@@ -11,6 +11,7 @@ const LINKS = [
   { href: "/prompts", label: "PromptForge" },
   { href: "/diff", label: "DiffSense" },
   { href: "/rfc", label: "ThreadWeaver" },
+  { href: "/playground", label: "Playground" },
 ];
 
 export default function Navbar() {
@@ -21,9 +22,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-[var(--color-border-subtle)] bg-[var(--color-bg)]/80 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-7 h-7 rounded-md bg-[var(--color-accent)] flex items-center justify-center text-white text-xs font-bold group-hover:bg-[var(--color-accent-bright)] transition-colors">
-            D
-          </div>
+          <img src="/favicon.svg" alt="DevForge" className="w-7 h-7 rounded-md group-hover:opacity-90 transition-opacity" />
           <span className="text-[15px] font-semibold tracking-tight">DevForge</span>
         </Link>
 
@@ -44,6 +43,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <Link href="/docs" className="text-[13px] text-[var(--color-text-tertiary)] hover:text-[var(--color-text-secondary)] transition-colors">
+            Docs
+          </Link>
           <a
             href="https://github.com/XinnBlueBird/devforge"
             target="_blank"

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="anvil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#828fff"/>
+      <stop offset="100%" style="stop-color:#5e6ad2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="#08090a"/>
+  
+  <!-- Ambient glow under anvil -->
+  <ellipse cx="256" cy="380" rx="130" ry="30" fill="#5e6ad2" opacity="0.08"/>
+
+  <!-- === ANVIL — unmistakable silhouette === -->
+  <!-- Flat striking surface on top -->
+  <rect x="168" y="260" width="176" height="18" rx="3" fill="url(#anvil)" filter="url(#glow)"/>
+  
+  <!-- Left horn (pointed extension going left) -->
+  <path d="M168 260 L128 260 C118 260 112 254 116 245 L140 222 C144 218 152 218 156 222 L168 240 Z" fill="url(#anvil)" opacity="0.85"/>
+  
+  <!-- Right heel (shorter extension going right) -->
+  <path d="M344 260 L376 260 C386 260 392 254 388 245 L372 222 C368 218 360 218 356 222 L344 240 Z" fill="url(#anvil)" opacity="0.85"/>
+  
+  <!-- Neck / waist (narrow middle, tapering from wide top to wide base) -->
+  <path d="M196 278 L220 330 L292 330 L316 278 Z" fill="url(#anvil)" opacity="0.8"/>
+  
+  <!-- Wide base / feet -->
+  <path d="M140 330 L372 330 L388 342 C394 346 394 354 388 358 L372 366 L140 366 L124 358 C118 354 118 346 124 342 Z" fill="url(#anvil)"/>
+  
+  <!-- Base ground shadow -->
+  <rect x="120" y="366" width="272" height="5" rx="2.5" fill="#5e6ad2" opacity="0.2"/>
+
+  <!-- === CODE BRACKETS </> — bold, clear, unmistakable === -->
+  <!-- These sit ABOVE the anvil, as if stamped/engraved in the air -->
+  
+  <!-- Left bracket < -->
+  <path d="M198 146 L154 200 L198 254" stroke="#ffffff" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter" fill="none" filter="url(#glow)"/>
+  
+  <!-- Forward slash / -->
+  <path d="M237 132 L275 268" stroke="#ffffff" stroke-width="14" stroke-linecap="square" fill="none" opacity="0.7"/>
+  
+  <!-- Right bracket > -->
+  <path d="M314 146 L358 200 L314 254" stroke="#ffffff" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter" fill="none" filter="url(#glow)"/>
+
+  <!-- === FORGE SPARKS === -->
+  <!-- Sparks flying off the anvil top -->
+  <circle cx="195" cy="230" r="5" fill="#a5b4fc" filter="url(#glow)"/>
+  <circle cx="176" cy="212" r="3.5" fill="#828fff" opacity="0.7"/>
+  <circle cx="188" cy="196" r="2" fill="#7170ff" opacity="0.4"/>
+  
+  <circle cx="317" cy="230" r="5" fill="#a5b4fc" filter="url(#glow)"/>
+  <circle cx="336" cy="212" r="3.5" fill="#828fff" opacity="0.7"/>
+  <circle cx="324" cy="196" r="2" fill="#7170ff" opacity="0.4"/>
+  
+  <!-- Center spark (impact point) -->
+  <circle cx="256" cy="236" r="4" fill="#c7d2fe" filter="url(#glow)" opacity="0.6"/>
+</svg>
